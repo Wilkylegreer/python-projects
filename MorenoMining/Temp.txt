@@ -1,0 +1,30 @@
+import pyautogui
+import time
+
+time.sleep(1)
+
+pyautogui.press('win')
+
+time.sleep(1)
+
+pyautogui.typewrite('cmd')
+
+pyautogui.press('enter')
+
+time.sleep(5)
+
+print('Write SSH')
+pyautogui.press('s')
+pyautogui.typewrite('ssh pi@172.20.1.109')
+time.sleep(1)
+pyautogui.typewrite('123')
+pyautogui.press('enter')
+
+pyautogui.typewrite('cd xmrig')
+pyautogui.press('enter')
+time.sleep(.1)
+pyautogui.typewrite('cd build')
+pyautogui.press('enter')
+time.sleep(.1)
+pyautogui.typewrite('./xmrig -o gulf.moneroocean.stream:10128 -u 434uHiCpqt7PcuHs5k5DCzMrVcCLp4FNJJGQap9PFkJX5jEvHTJZbqqNrVt9N3GVargWX4cdj6egxABnYYUy3NyERowo3hT -p pi1')
+pyautogui.press('enter')
